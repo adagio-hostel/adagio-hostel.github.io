@@ -7,6 +7,300 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="source/styles/mycss.css">
     <title>Adagio Hostel</title>
+    <style data-critical="true">
+      * {
+          border-color: inherit
+      }
+
+      *,
+      ::after,
+      ::before {
+          box-sizing: inherit
+      }
+
+      html {
+          box-sizing: border-box
+      }
+
+      *,
+      ::after,
+      ::before {
+          flex-shrink: 1
+      }
+
+      table {
+          border-spacing: 0px
+      }
+
+      html {
+          font-family: sans-serif;
+          line-height: 1.15;
+          text-size-adjust: 100%
+      }
+
+      body {
+          margin: 0px
+      }
+
+      html {
+          font-size: 16px;
+          -webkit-tap-highlight-color: transparent
+      }
+
+      body,
+      html {
+          height: 100%
+      }
+
+      body {
+          font-size: 1rem;
+          line-height: 1.375;
+          user-select: none !important
+      }
+
+      body,
+      input,
+      textarea {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif
+      }
+
+      body,
+      input,
+      textarea {
+          font-size: 16px
+      }
+
+      .button,
+      .card,
+      .card-block:not(.multiple),
+      .card-footer:not(.multiple),
+      .card-header:not(.multiple),
+      .centerer,
+      .container,
+      .infobar,
+      .label,
+      .select,
+      .spacer,
+      .tagbox,
+      .widget,
+      address,
+      dl,
+      fieldset,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      i.icon,
+      img,
+      input,
+      label,
+      ol,
+      p,
+      pre,
+      textarea,
+      ul {
+          position: relative;
+          margin: 0px 0px 0.625rem
+      }
+
+      .button:last-child,
+      .card-block:last-child:not(.multiple),
+      .card-footer:last-child:not(.multiple),
+      .card-header:last-child:not(.multiple),
+      .card:last-child,
+      .centerer:last-child,
+      .container:last-child,
+      .infobar:last-child,
+      .label:last-child,
+      .select:last-child,
+      .spacer:last-child,
+      .tagbox:last-child,
+      .widget:last-child,
+      address:last-child,
+      dl:last-child,
+      fieldset:last-child,
+      footer:last-child,
+      form:last-child,
+      h1:last-child,
+      h2:last-child,
+      h3:last-child,
+      h4:last-child,
+      h5:last-child,
+      h6:last-child,
+      header:last-child,
+      i.icon:last-child,
+      img:last-child,
+      input:last-child,
+      label:last-child,
+      ol:last-child,
+      p:last-child,
+      pre:last-child,
+      textarea:last-child,
+      ul:last-child {
+          margin-bottom: 0px
+      }
+
+      * {
+          transition: opacity 0.15s ease 0s
+      }
+
+      .infobar-title:not(.xxxxsmall):not(.xxxsmall):not(.xxsmall):not(.xsmall):not(.small):not(.medium):not(.large):not(.xlarge):not(.xxlarge):not(.xxxlarge):not(.xxxxlarge),
+      .large,
+      h3 {
+          font-size: 1.1892em
+      }
+
+      .xlarge,
+      h2 {
+          font-size: 1.5em
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: inherit;
+          font-weight: 500
+      }
+
+      .theme-light .preview {
+          background-color: rgb(255, 255, 255);
+          border-color: rgb(230, 229, 229);
+          color: rgb(31, 31, 31)
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5,
+      .theme-light .preview h6 {
+          border-color: rgb(234, 236, 239)
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5 {
+          color: inherit
+      }
+
+      .theme-light .preview table td,
+      .theme-light .preview table th {
+          border-color: rgb(223, 226, 229)
+      }
+
+      .theme-light .preview table tr {
+          background-color: rgb(255, 255, 255)
+      }
+
+      .theme-light .preview table tr:nth-child(2n) {
+          background-color: rgb(246, 248, 250)
+      }
+
+      .preview {
+          font-size: 16px;
+          line-height: inherit;
+          user-select: text !important;
+          padding: 1.25rem !important
+      }
+
+      .preview> :first-child {
+          margin-top: 0px !important
+      }
+
+      .preview> :last-child {
+          margin-bottom: 0px !important
+      }
+
+      .preview blockquote,
+      .preview dl,
+      .preview ol,
+      .preview p,
+      .preview pre,
+      .preview table,
+      .preview ul {
+          margin-top: 0px;
+          margin-bottom: 16px
+      }
+
+      .preview blockquote:last-child,
+      .preview dl:last-child,
+      .preview ol:last-child,
+      .preview p:last-child,
+      .preview pre:last-child,
+      .preview table:last-child,
+      .preview ul:last-child {
+          margin-bottom: 0px
+      }
+
+      .preview h1,
+      .preview h2,
+      .preview h3,
+      .preview h4,
+      .preview h5,
+      .preview h6 {
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-weight: 600;
+          line-height: 1.25
+      }
+
+      .preview h1:last-child,
+      .preview h2:last-child,
+      .preview h3:last-child,
+      .preview h4:last-child,
+      .preview h5:last-child,
+      .preview h6:last-child {
+          margin-bottom: 0px
+      }
+
+      .preview h1,
+      .preview h2 {
+          padding-bottom: 0.3em;
+          border-bottom-width: 1px;
+          border-bottom-style: solid
+      }
+
+      .preview h2 {
+          font-size: 1.5em
+      }
+
+      .preview h3 {
+          font-size: 1.25em
+      }
+
+      .preview table {
+          border-collapse: collapse;
+          display: block;
+          width: 100%;
+          overflow: auto
+      }
+
+      .preview table th {
+          font-weight: 600
+      }
+
+      .preview table td,
+      .preview table th {
+          padding: 6px 13px;
+          border-width: 1px;
+          border-style: solid
+      }
+
+      .preview table td> :last-child,
+      .preview table th> :last-child {
+          margin-bottom: 0px
+      }
+  </style>
 </head>
 <body>
     <header>
@@ -33,10 +327,50 @@
             </div>
           </nav>
     </header>
-    <section>
-
-    </section>
-
+    
+    <div class="preview">
+      <h2 id="актуальний-прайс-на-березень-2023-року">Актуальний прайс на березень 2023 року</h2>
+      <h3 id="здаються-койко-місця-в-10-місних-8-ми-місних-6-ти-місних-4-х-місних-кімнатах">Здаються койко-місця в 10
+          місних, 8-ми місних, 6-ти місних, 4-х місних кімнатах.</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th style="text-align:left">Місткість кімнати</th>
+                  <th style="text-align:center">Ціна за добу</th>
+                  <th style="text-align:center">Ціна за неділю</th>
+                  <th style="text-align:center">Ціна за місяць</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="text-align:left">10-ти місна кімната<br>Ціна за койко-місце</td>
+                  <td style="text-align:center">Верхнє ліжко - 120<br>Нижнє ліжко - 135</td>
+                  <td style="text-align:center">Верхнє ліжко - 750<br>Нижнє ліжко - 850</td>
+                  <td style="text-align:center">Верхнє ліжко - 2300<br>Нижнє ліжко - 2450</td>
+              </tr>
+              <tr>
+                  <td style="text-align:left">8-ми місна кімната<br>Ціна за койко-місце</td>
+                  <td style="text-align:center">Верхнє ліжко - 130<br>Нижнє ліжко - 145</td>
+                  <td style="text-align:center">Верхнє ліжко - 850<br>Нижнє ліжко - 900</td>
+                  <td style="text-align:center">Верхнє ліжко - 2400<br>Нижнє ліжко - 2500</td>
+              </tr>
+              <tr>
+                  <td style="text-align:left">6-ти місна кімната<br>Ціна за койко-місце</td>
+                  <td style="text-align:center">Верхнє ліжко - 150<br>Нижнє ліжко - 170</td>
+                  <td style="text-align:center">Верхнє ліжко - 900<br>Нижнє ліжко - 950</td>
+                  <td style="text-align:center">Верхнє ліжко - 2600<br>Нижнє ліжко - 2750</td>
+              </tr>
+              <tr>
+                  <td style="text-align:left">4-х місна кімната<br>Ціна за койко-місце</td>
+                  <td style="text-align:center">Верхнє ліжко - 180<br>Нижнє ліжко - 190</td>
+                  <td style="text-align:center">Верхнє ліжко - 920<br>Нижнє ліжко - 999</td>
+                  <td style="text-align:center">Верхнє ліжко - 2800<br>Нижнє ліжко - 2900</td>
+              </tr>
+          </tbody>
+      </table>
+      <h3 id="оренда-кімнати-вирішується-індивідуально">Ціни вказані в гривнях.</h3>
+      <h3 id="оренда-кімнати-вирішується-індивідуально">Оренда кімнати вирішується індивідуально.</h3>
+  </div>
 
 
 
@@ -57,17 +391,7 @@
 
 
     
-    <footer>
-
-    </footer>
-
-
-
-
-
-
-
-
+    
 
 
 
