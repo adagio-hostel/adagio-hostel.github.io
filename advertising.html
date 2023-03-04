@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <style data-critical="true">
+      * {
+          border-color: inherit
+      }
+
+      *,
+      ::after,
+      ::before {
+          box-sizing: inherit
+      }
+
+      html {
+          box-sizing: border-box
+      }
+
+      *,
+      ::after,
+      ::before {
+          flex-shrink: 1
+      }
+
+      html {
+          font-family: sans-serif;
+          line-height: 1.15;
+          text-size-adjust: 100%
+      }
+
+      body {
+          margin: 0px
+      }
+
+      html {
+          font-size: 16px;
+          -webkit-tap-highlight-color: transparent
+      }
+
+      body,
+      html {
+          height: 100%
+      }
+
+      body {
+          font-size: 1rem;
+          line-height: 1.375;
+          user-select: none !important
+      }
+
+      body,
+      input,
+      textarea {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif
+      }
+
+      body,
+      input,
+      textarea {
+          font-size: 16px
+      }
+
+      .button,
+      .card,
+      .card-block:not(.multiple),
+      .card-footer:not(.multiple),
+      .card-header:not(.multiple),
+      .centerer,
+      .container,
+      .infobar,
+      .label,
+      .select,
+      .spacer,
+      .tagbox,
+      .widget,
+      address,
+      dl,
+      fieldset,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      i.icon,
+      img,
+      input,
+      label,
+      ol,
+      p,
+      pre,
+      textarea,
+      ul {
+          position: relative;
+          margin: 0px 0px 0.625rem
+      }
+
+      .button:last-child,
+      .card-block:last-child:not(.multiple),
+      .card-footer:last-child:not(.multiple),
+      .card-header:last-child:not(.multiple),
+      .card:last-child,
+      .centerer:last-child,
+      .container:last-child,
+      .infobar:last-child,
+      .label:last-child,
+      .select:last-child,
+      .spacer:last-child,
+      .tagbox:last-child,
+      .widget:last-child,
+      address:last-child,
+      dl:last-child,
+      fieldset:last-child,
+      footer:last-child,
+      form:last-child,
+      h1:last-child,
+      h2:last-child,
+      h3:last-child,
+      h4:last-child,
+      h5:last-child,
+      h6:last-child,
+      header:last-child,
+      i.icon:last-child,
+      img:last-child,
+      input:last-child,
+      label:last-child,
+      ol:last-child,
+      p:last-child,
+      pre:last-child,
+      textarea:last-child,
+      ul:last-child {
+          margin-bottom: 0px
+      }
+
+      * {
+          transition: opacity 0.15s ease 0s
+      }
+
+      .medium,
+      h4 {
+          font-size: 1em
+      }
+
+      .xlarge,
+      h2 {
+          font-size: 1.5em
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: inherit;
+          font-weight: 500
+      }
+
+      dd,
+      dl,
+      ol,
+      ul {
+          padding-left: 1.25rem
+      }
+
+      .theme-light .preview {
+          background-color: rgb(255, 255, 255);
+          border-color: rgb(230, 229, 229);
+          color: rgb(31, 31, 31)
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5,
+      .theme-light .preview h6 {
+          border-color: rgb(234, 236, 239)
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5 {
+          color: inherit
+      }
+
+      .preview {
+          font-size: 16px;
+          line-height: inherit;
+          user-select: text !important;
+          padding: 1.25rem !important
+      }
+
+      .preview> :first-child {
+          margin-top: 0px !important
+      }
+
+      .preview> :last-child {
+          margin-bottom: 0px !important
+      }
+
+      .preview blockquote,
+      .preview dl,
+      .preview ol,
+      .preview p,
+      .preview pre,
+      .preview table,
+      .preview ul {
+          margin-top: 0px;
+          margin-bottom: 16px
+      }
+
+      .preview blockquote:last-child,
+      .preview dl:last-child,
+      .preview ol:last-child,
+      .preview p:last-child,
+      .preview pre:last-child,
+      .preview table:last-child,
+      .preview ul:last-child {
+          margin-bottom: 0px
+      }
+
+      .preview h1,
+      .preview h2,
+      .preview h3,
+      .preview h4,
+      .preview h5,
+      .preview h6 {
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-weight: 600;
+          line-height: 1.25
+      }
+
+      .preview h1:last-child,
+      .preview h2:last-child,
+      .preview h3:last-child,
+      .preview h4:last-child,
+      .preview h5:last-child,
+      .preview h6:last-child {
+          margin-bottom: 0px
+      }
+
+      .preview h1,
+      .preview h2 {
+          padding-bottom: 0.3em;
+          border-bottom-width: 1px;
+          border-bottom-style: solid
+      }
+
+      .preview h2 {
+          font-size: 1.5em
+      }
+
+      .preview h4 {
+          font-size: 1em
+      }
+
+      .preview ol,
+      .preview ul {
+          padding-left: 2em
+      }
+
+      .preview li+li {
+          margin-top: 0.25em
+      }
+  </style>
+    <title>Реклама</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Adagio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Головна</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="features.html">Переваги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="pricing.html">Прайс</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="preview">
+            <h2 id="пропоную-рекламу-в-інтернеті-за-допомогою-лендінгів">Пропоную рекламу в інтернеті за допомогою лендінгів
+            </h2>
+            <p>Пропоную рекламу в інтернеті за допомогою лендінгів.<br>
+                Посилання на лендінг публікується на всіх популярних платформах з найбільшим трафіком: Facebook, Instagram,
+                YouTube, TikTok i т.п.<br>
+                В чому перевага такої реклами над простою подачею оголошень на дошках оголошень?<br>
+                Після того, як ви подали оголошення на дошці оголошень, його вже не можна відредагувати, а якщо і можна, то
+                не доцільно. Адже воно опускається вниз на дошці оголошень, а зверху показуються новіші оголошення. На дошці
+                оголошень тисячі їх. А ваш лендінг завжди на першій сторінці тому, що він і є перша сторінка. Ваш лендінг
+                можна оновлювати у будь який час і гіперпосилання, розміщене на Facebook, You Tube або іншій популярній
+                платформі буде завжди вести на лендінг з уже оновленою інформацією. Чим більше посилань з лендінгів на ваш
+                основний сайт - тим вище у пошуковій видачі Google, Yahoo, DuckDuckGo та інших пошуковиків він ранжується.
+                Таким чином збільшується воронка продажів за рахунок більшого охоплення аудиторії.<br>
+                Відсрочений SEO ефект. Поступово трафік на ваш сайт збільшиться із-за збільшеної ссилочної маси, що вказує
+                на нього.</p>
+            <p>Якщо Вас цікавить така пропозиція - пишіть в телеграм <a target="_blank"
+                    href="https://t.me/GalichY">https://t.me/GalichY</a></p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
