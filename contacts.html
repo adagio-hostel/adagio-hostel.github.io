@@ -29,10 +29,6 @@
             flex-shrink: 1
         }
 
-        table {
-            border-spacing: 0px
-        }
-
         html {
             font-family: sans-serif;
             line-height: 1.15;
@@ -150,10 +146,9 @@
             transition: opacity 0.15s ease 0s
         }
 
-        .infobar-title:not(.xxxxsmall):not(.xxxsmall):not(.xxsmall):not(.xsmall):not(.small):not(.medium):not(.large):not(.xlarge):not(.xxlarge):not(.xxxlarge):not(.xxxxlarge),
-        .large,
-        h3 {
-            font-size: 1.1892em
+        .medium,
+        h4 {
+            font-size: 1em
         }
 
         .xlarge,
@@ -169,6 +164,13 @@
         h6 {
             font-family: inherit;
             font-weight: 500
+        }
+
+        dd,
+        dl,
+        ol,
+        ul {
+            padding-left: 1.25rem
         }
 
         .theme-light .preview {
@@ -192,19 +194,6 @@
         .theme-light .preview h4,
         .theme-light .preview h5 {
             color: inherit
-        }
-
-        .theme-light .preview table td,
-        .theme-light .preview table th {
-            border-color: rgb(223, 226, 229)
-        }
-
-        .theme-light .preview table tr {
-            background-color: rgb(255, 255, 255)
-        }
-
-        .theme-light .preview table tr:nth-child(2n) {
-            background-color: rgb(246, 248, 250)
         }
 
         .preview {
@@ -275,34 +264,20 @@
             font-size: 1.5em
         }
 
-        .preview h3 {
-            font-size: 1.25em
+        .preview h4 {
+            font-size: 1em
         }
 
-        .preview table {
-            border-collapse: collapse;
-            display: block;
-            width: 100%;
-            overflow: auto
+        .preview ol,
+        .preview ul {
+            padding-left: 2em
         }
 
-        .preview table th {
-            font-weight: 600
-        }
-
-        .preview table td,
-        .preview table th {
-            padding: 6px 13px;
-            border-width: 1px;
-            border-style: solid
-        }
-
-        .preview table td> :last-child,
-        .preview table th> :last-child {
-            margin-bottom: 0px
+        .preview li+li {
+            margin-top: 0.25em
         }
     </style>
-    <title>Adagio Hostel</title>
+    <title>Контакти</title>
 </head>
 
 <body>
@@ -317,10 +292,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Головна</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="features.html">Переваги</a>
+                            <a class="nav-link active" href="features.html">Переваги</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="pricing.html">Прайс</a>
@@ -331,53 +306,47 @@
             </div>
         </nav>
     </header>
-    
-    <div class="preview">
-        <p><img src="source/images/2.png"
-                class="attachment" data-filename="Clipboard_2023-02-27-19-33-30.png" alt=""></p>
-        <h2 id="хостел-адажіо-пропонує">Хостел Адажіо. Суто для інтелігентних людей</h2>
-        
-            <a href="https://www.adagio-hostel.com.ua/"><h2>Adagio_official</h2></a>
-            <p>Капсульний хостел біля метро Чернігівська у Києві здає в оренду капсули, кімнати та ліжко-місця подобово та
-                довготерміново у Києві. Вартість від 120 грн на добу. Без комісії. Без посередників. Без передоплати. Ви
-                оплачуєте тільки той час, який проживатимете.<br>
-                Безкоштовна автостоянка, що охороняється.<br>
-                Ортопедичні матраци.<br>
-                Безкоштовний Wi-Fi.<br>
-                Гаряча вода цілодобово, щомісяця, без вимкнень.</p>
-            <p>Координати для навігатора: 50.45668671038163, 30.645456860263046</p>
-            <p>Телефонуйте адміністратору у будь-який час. Він відповість на всі питання, що вас цікавлять і підкаже шлях до
-                хостелу.<br>
-                Тел.:<br>
+    <section>
+        <div class="preview">
+            <h2>Контакти</h2>
+            <p>
+                02094<br>
+                м. Київ<br>
+                вул. Червоноткацька, 44Б.<br><br>
+
+
+                тел.:<br>
                 +38 095 030 05 05<br>
                 +38 096 030 05 05<br>
                 +38 063 030 05 05<br>
-                Адреса: вул. Червоноткацька, 44Б.</p>
-                
-                <p>Adagio Lara Fabian</p>
-                <audio src="source/files/Adagio.opus" autobuffer controls></audio>
+            </p>
 
-                <!-- <audio src="Koldovskoe_ozero.opus" autobuffer controls></audio> -->
-       
-    </div>
-
-
-    <footer class="footer bg-light ">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 footer-text tex-center">
-                    <p>
-                        All Rights Reserved 2023
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-12 footer-text tex-center">
-                    <p><a href="contacts.html">Контакти</a><br><a href="vacancies.html">Вакансії</a><br></p>
-                </div>
-                <div class="col-lg-4 col-md-12"></div>
-
-
-            </div>
         </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
     </footer>
 
 
